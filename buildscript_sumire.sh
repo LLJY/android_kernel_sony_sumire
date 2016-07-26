@@ -17,7 +17,7 @@ then
 	../final_files/mkbootimg \
 	--kernel arch/arm64/boot/Image.gz-dtb \
 	--ramdisk ../final_files/newrd.gz \
-	--cmdline "androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 dwc3_msm.prop_chg_detect=Y coherent_pool=2M dwc3_msm.hvdcp_max_current=1500 androidboot.selinux=permissive" \
+	--cmdline "androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 dwc3_msm.prop_chg_detect=Y coherent_pool=2M dwc3_msm.hvdcp_max_current=1800 androidboot.selinux=permissive" \
 	--base 0x00000000 \
 	--pagesize 4096 \
 	--ramdisk_offset 0x02000000 \
